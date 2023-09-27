@@ -1,71 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-  </head>
-  <body>
-    <div class="container bg-primary">
-      container
-      </div>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body class="p-2">
+    <h1 class="text-center">Container</h1>
+    <div class="container-fluid text-center bg-primary text-light rounded">
+        <h1>Hello World!</h1>
     </div>
-    <div class="container-fluid bg-info">container-fluid</div>
-     <h1>Grids</h1>
-      <div class="row">
-        <div class="raw">
-          <div class="col-lg-4 col -sm-6 bg-secondary text-white">
-         Hello 
-          </div>
-          <div class="col-lg-4 col-sm-6 bg-danger text-white">
-            hello
-          </div>
-          <div class="col-lg-4 col-sm-6 bg-success text-white">
-          HELLO
-          </div>
+    <hr>
+    <h1 class="text-center">Grids</h1>
+    <div class="container-fluid">
+        <div class="row text-center text-white">
+            <div class="col-lg-4 col-sm-4 bg-primary rounded">
+                Column 1
+            </div>
+            <div class="col-lg-4 col-sm-4 bg-danger rounded">
+                Column 2
+            </div>
+            <div class="col-lg-4 col-sm-4 bg-warning rounded">
+                Column 3
+            </div>
         </div>
-    <br />
-    <table class="table table-striped table-boardered table-hover">
-      <thead>
-        <tr>
-          <th>No</th>
-          <th>Student</th>
-          <th>Quiz</th>
-        </tr>
-        <tbody><tr>
-          <th>1</th>
-          <th>Student1</th>
-          <th>66</th>
-        </tr>
-        <tr>
-          <th>2</th>
-          <th>Student2</th>
-          <th>77</th>
-        </tr>
-        <tr>
-          <th>3</th>
-          <th>Student3</th>
-          <th>44</th>
-        </tr></tbody>
-      </thead>
-    </table>
-    <div class="container">
-        <h1 class="text-center">
-            Image
-        </h1>
-        <center>
-            <img src="https://cdn.pixabay.com/photo/2017/09/08/10/00/tree-7368850_960_720.jpg" alt="Tree" width="300" height="300">
+        <hr>
+        <h1 class="text-center">Table</h1>
+        <table class="table table-striped table-bordered table-hover p-0">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Momen</td>
+                    <td>99</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Aland</td>
+                    <td>88</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Komas</td>
+                    <td>77</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <h1 class="text-center">Image</h1>
+        <div class="container-fluid">
+            <img class="img-thumbnail" src="Img.jpg" alt="">
+            <img class="img-thumbnail" src="Img.jpg" alt="">
+            <img class="img-thumbnail" src="Img.jpg" alt="">
+        </div>
     </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <div class="Container">
+      <h1 class="text-center">Alert</h1>
+      <div class="alert alert-primary" role="alert">
+        Primary alert 
+      </div>
+      <div class="alert alert-secondary" role="alert">
+        Secondry alert 
+      </div>
+      <div class="alert alert-success" role="alert">
+        success alert 
+      </div>
+      <div class="alert alert-light" role="alert">
+        danger alert 
+      </div>
+      <div class="alert alert-warning" role="alert">
+        warning alert 
+      </div>
+      <div class="alert alert-info" role="alert">
+        Primary info 
+      </div>
+      <div class="alert alert-dark" role="alert">
+        Primary dark 
+      </div>
+      <div class="Container text-center">
+        <h1 class="text-center">Button</h1>
+        <button class="btn btn-primary"><i class="bi bi-award"></i>Primary</button>
+      
+        <button class="btn btn-danger">danger</button>
+        <button class="btn btn-info">Info</button>
+      </div>
+      <div></div>
+    </div>
+    <form style="max-width: 400px; margin: 0 auto;">
+  <div class="mb-3" style="text-align: left;">
+    <label class="form-label" style="font-weight: bold;">Email address:</label>
+    <input type="email" class="form-control" style="width: 100%;">
+    <div id="emailHelp" class="form-text" style="font-style: italic; color: #666;">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3" style="text-align: left;">
+    <label class="form-label" style="font-weight: bold;">Password:</label>
+    <input type="password" class="form-control" style="width: 100%;">
+  </div>
+  <div class="mb-3 form-check" style="text-align: left;">
+    <input type="checkbox" class="form-check-input">
+    <label class="form-check-label" style="font-weight: normal;">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary" style="width: 100%;">Submit</button>
+</form>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
